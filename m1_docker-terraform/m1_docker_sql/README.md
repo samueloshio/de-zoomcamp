@@ -174,7 +174,7 @@ WHERE
 LIMIT 100
 ```
 
-- Count records
+- **Count records**
   How many taxi trips were totally made on September 18th 2019?
 
 Tip: started and finished on 2019-09-18.
@@ -197,7 +197,8 @@ ORDER BY
 	"count" DESC;
 ```
 
-- Longest trip for each day
+- **Longest trip for each day**
+
   Which was the pick up day with the longest trip distance? Use the pick up time for your calculations.
 
 Tip: For every trip on a single day, we only care about the trip with the longest distance.
@@ -216,7 +217,8 @@ ORDER BY
 	"max_distance" DESC;
 ```
 
-\*\* Three biggest pick up Boroughs
+- **Three biggest pick up Boroughs**
+
 Consider lpep_pickup_datetime in '2019-09-18' and ignoring Borough has Unknown
 
 Which were the 3 pick up Boroughs that had a sum of total_amount superior to 50000
