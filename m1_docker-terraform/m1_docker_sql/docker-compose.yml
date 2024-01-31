@@ -9,8 +9,6 @@ services:
       - POSTGRES_DB=ny_taxi2019
     ports:
       - 5432:5432
-    # networks:
-    #   - pg_network
     volumes:
       - ./ny_taxi2019_pg-data:/var/lib/postgresql/data
 
@@ -25,14 +23,3 @@ services:
       - ./pgadmin-data:/var/lib/pgadmin
     ports:
       - 8080:80
-    # # networks:
-    #   - pg_network
-
-  # networks:
-  #  pg_network:
-
-  # volumes:
-  #   - ny_taxi2019_pg-data:
-  #   - pgadmin-data:
-  #   pg-data:
-  #    pgadmin-data:
