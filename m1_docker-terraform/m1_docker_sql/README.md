@@ -155,7 +155,7 @@ For the full [docker-compose.yml](docker-compose.yml)
 
 ### SQL QUERY
 
-Longest trips
+Join tables on zone location
 
 ```bash
 SELECT
@@ -174,8 +174,9 @@ WHERE
 LIMIT 100
 ```
 
-- **Count records**
-  How many taxi trips were totally made on September 18th 2019?
+**Count records**
+
+How many taxi trips were totally made on September 18th 2019?
 
 Tip: started and finished on 2019-09-18.
 
@@ -197,9 +198,9 @@ ORDER BY
 	"count" DESC;
 ```
 
-- **Longest trip for each day**
+**Longest trip for each day**
 
-  Which was the pick up day with the longest trip distance? Use the pick up time for your calculations.
+Which was the pick up day with the longest trip distance? Use the pick up time for your calculations.
 
 Tip: For every trip on a single day, we only care about the trip with the longest distance.
 
@@ -217,7 +218,7 @@ ORDER BY
 	"max_distance" DESC;
 ```
 
-- **Three biggest pick up Boroughs**
+**Three biggest pick up Boroughs**
 
 Consider lpep_pickup_datetime in '2019-09-18' and ignoring Borough has Unknown
 
@@ -240,7 +241,9 @@ ORDER BY
 	"count" DESC;
 ```
 
-Longest trips with the name of the zone for the passengers picked up in September 2019 in the zone name Astoria which was the drop off zone that had the largest tip.
+**Largest tip**
+
+For the passengers picked up in September 2019 in the zone name Astoria which was the drop off zone that had the largest tip.
 
 ```bash
 SELECT
