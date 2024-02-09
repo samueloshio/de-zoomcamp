@@ -23,7 +23,7 @@ services:
       - ~/Documents/secrets/personal-gcp.json:/home/src/personal-gcp.json
     restart: on-failure:5
   postgres:
-    image: postgres:14
+    image: postgres:16
     restart: on-failure
     container_name: ${PROJECT_NAME}-postgres
     env_file:
@@ -33,4 +33,4 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
-      - "${POSTGRES_PORT}:5432"
+      - '${POSTGRES_PORT}:5432'
