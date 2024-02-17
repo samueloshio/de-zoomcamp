@@ -11,7 +11,7 @@
 - Setting up infrastructure on GCP with Terraform
 - Preparing the environment for the course
 
-### [Module 2: Workflow Orchestration](02-workflow-orchestration/)
+### [Module 2: Workflow Orchestration](m2_workflow_orchestration/)
 
 - Data Lake
 - Workflow orchestration
