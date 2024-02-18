@@ -31,6 +31,7 @@ variable "BQ_dataset" {
   description = "My BigQuery Dataset Name"
   #Update the below to what you want your dataset to be called
   default     = "green_tripdata"
+  # deletion_protection = false
 }
 
 variable "BQ_table" {
@@ -38,6 +39,7 @@ variable "BQ_table" {
   #Update the below to a unique bucket name
   #default     = "${local.data_lake_bucket}_{var.project}"
   default     = "ny_taxi_tripdata"
+  # deletion_protection = false
 }
 
 variable "bucket_name" {

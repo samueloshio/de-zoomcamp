@@ -1,5 +1,4 @@
 terraform {
-    required_version = ">= 1.0"
     backend "local" {}
     required_providers {
     google = {
@@ -43,6 +42,7 @@ resource "google_bigquery_dataset" "default" {
   dataset_id = var.BQ_dataset
   project    = var.project
   location   = var.location
+  # deletion_protection  = false
 }
 
 resource "google_bigquery_table" "default" {
@@ -50,4 +50,5 @@ resource "google_bigquery_table" "default" {
     table_id   = var.BQ_table
     project    = var.project
     //location   = var.location
+    
 }
