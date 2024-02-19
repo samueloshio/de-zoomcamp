@@ -176,6 +176,7 @@ magic-zoomcamp
 titanic_clean.csv
 
 # DLT
+.dlt
 chess_pipeline.py
 requirements.txt
 chess/
@@ -189,3 +190,6 @@ secrets.toml
 # ignore duckdb
 *.duckdb
 *.wal
+
+# DBT
+.dbt-api-token
